@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { v4 as uuid } from "uuid";
 
 // button-group
@@ -38,13 +38,16 @@ function App() {
   const [items, setItems] = useState(itemsData);
   const [type, setType] = useState("all");
 
+  useEffect(()=> {
+    
+  });
+  
   const handleChangeValue = (event) => {
     setValue(event.target.value);
   };
 
   const handleAddItem = () => {
-    // no methods => push, pop, splice, shift, unshift, concat, etc.
-    // yes methods => spread operator, filter, find, map, forEach, slice, etc.
+
     const newItem = {
       key: uuid(),
       label: value,
