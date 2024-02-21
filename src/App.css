@@ -1,73 +1,32 @@
-/* App.js */
-.todo-app {
-  margin: 2rem auto 0 auto;
-  max-width: 400px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100svh;
 }
 
-.top-panel {
-  margin: 1rem 0;
+.main {
+  border: 1px solid black;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-/* app header */
-
-.app-header {
-  align-items: flex-end;
+.main__text {
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.app-header h1 {
-  flex-grow: 1;
-}
-
-.app-header h2 {
-  font-size: 1.2rem;
-  color: grey;
-}
-
-/* item add form */
-
-.item-add-form {
-  margin-top: 1rem;
-}
-
-.item-add-form input {
-  margin-right: 3px;
-}
-
-/* search-panel */
-.search-input {
-  width: auto;
-  flex-grow: 1;
-  margin-right: 3px;
-}
-
-/* todo list */
-.todo-list .list-group-item {
-  padding: 0.25rem 0.75rem;
-}
-
-/* todo list item */
-
-.todo-list-item {
-  font-size: 1.25rem;
-}
-
-.todo-list-item button {
-  width: 35px;
-  margin: 3px;
-}
-
-.todo-list-item-label {
-  margin-left: 1.25rem;
-  line-height: 35px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.todo-list-item.done .todo-list-item-label {
-  text-decoration: line-through;
-}
-
-.todo-list-item.important .todo-list-item-label {
-  font-weight: bold;
-  color: steelblue;
+.main__output {
+  border: 1px solid black;
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
